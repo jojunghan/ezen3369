@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>신상품 목록</title>
+   <style>
+      ul{
+         list-style: none;
+         margin: 0;
+         padding: 0;
+      }    
+
+      ul li{
+         position: relative;
+         float: left;
+         padding: 0;
+         margin: 10px;
+         overflow: hidden;
+      }
+
+      img{
+         margin: 0;
+         padding: 0;
+         /* float: left; */
+      }
+
+      .caption{
+         position: absolute;
+         top: 200px;
+         width: 300px;
+         height: 200px;
+         background: rgba(0,0,0,0.5);
+         opacity: 0;
+         transition: 0.3s;
+      }
+
+      li:hover .caption{
+         transform: translateY(-200px);
+         opacity: 1;
+      }
+
+      h1, p{
+         text-align: center;
+         color: white;
+      }
+
+
+   </style>
+</head>
+<body>
+   <div id="container">
+   <ul class="pro-list">
+   <li>
+   <img src="prod1.jpg">
+   <div class="caption">
+      <h1>신상품1</h1>
+      <p>상품1 설명 텍스트</p>
+      <p>가격1,000</p>
+   </div>
+   </li>
+   <li>
+   <img src="prod2.jpg">
+   <div class="caption">
+      <h1>신상품2</h1>
+      <p>상품2 설명 텍스트</p>
+      <p>가격1,200</p>
+   </div>
+   </li>
+   <li>
+   <img src="prod3.jpg">
+   <div class="caption">
+      <h1>신상품3</h1>
+      <p>상품3 설명 텍스트</p>
+      <p>가격1,300</p>
+   </div>
+   </li>
+ </ul>
+</div>
+</body>
+</html>
